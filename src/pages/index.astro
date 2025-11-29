@@ -1,0 +1,776 @@
+---
+const title = "Kreo Roastery - Luxury Coffee Roastery";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="grain">
+    <!-- Navigation -->
+    <nav>
+        <div class="flex justify-between items-center">
+            <div class="text-2xl md:text-3xl font-light tracking-[0.2em] md:tracking-[0.3em] text-luxury">KREO</div>
+            <div class="hidden md:flex space-x-8 lg:space-x-12 text-sm tracking-widest font-light">
+                <a href="#story" class="hover:text-luxury transition duration-500">STORY</a>
+                <a href="#craft" class="hover:text-luxury transition duration-500">CRAFT</a>
+                <a href="#collection" class="hover:text-luxury transition duration-500">COLLECTION</a>
+                <a href="#experience" class="hover:text-luxury transition duration-500">EXPERIENCE</a>
+            </div>
+            <button class="luxury-button text-xs hidden md:block">RESERVE</button>
+            <button class="md:hidden text-luxury text-2xl" id="menuToggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-menu">
+        <div class="mobile-menu-content">
+            <button class="close-menu text-luxury text-3xl" id="closeMenu">×</button>
+            <div class="mobile-menu-links">
+                <a href="#story" class="mobile-menu-link">STORY</a>
+                <a href="#craft" class="mobile-menu-link">CRAFT</a>
+                <a href="#collection" class="mobile-menu-link">COLLECTION</a>
+                <a href="#experience" class="mobile-menu-link">EXPERIENCE</a>
+                <button class="luxury-button text-xs mt-8">RESERVE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="relative">
+        <video autoplay muted loop playsinline class="fullscreen-image">
+            <source src="/video/coffe-web.mp4" type="video/mp4">
+        </video>
+        <div class="overlay overlay-gradient"></div>
+        <div class="content">
+            <div class="text-center fade-in px-8">
+                <h1 class="text-7xl md:text-9xl mb-8 text-shadow-luxury font-light">The Essence<br/>of Perfection</h1>
+                <div class="divider"></div>
+                <p class="text-xl md:text-2xl font-light tracking-wider text-luxury mb-12">HANDCRAFTED LUXURY COFFEE</p>
+                <button class="luxury-button">DISCOVER MORE</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Screen Image 1 -->
+    <section class="relative">
+        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=2400&q=80" alt="Coffee Beans" class="fullscreen-image">
+        <div class="overlay" style="background: rgba(0,0,0,0.6);"></div>
+        <div class="content">
+            <div class="max-w-4xl mx-auto text-center px-8 fade-in">
+                <p class="text-sm tracking-[0.3em] text-luxury mb-6">EST. 1987</p>
+                <h2 class="text-6xl md:text-8xl mb-8 font-light">Legacy of<br/>Excellence</h2>
+                <p class="text-lg md:text-xl font-light leading-relaxed opacity-90">Three generations of master roasters, perfecting the art of coffee in pursuit of the extraordinary</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Split Screen Section -->
+    <section class="split-screen">
+        <div class="split-image">
+            <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=1200&q=80" alt="Green Beans">
+            <div class="overlay" style="background: rgba(0,0,0,0.4);"></div>
+            <div class="content">
+                <div class="px-16 slide-in-left">
+                    <p class="text-sm tracking-[0.3em] text-luxury mb-4">CHAPTER I</p>
+                    <h3 class="text-5xl mb-6 font-light">The Selection</h3>
+                    <p class="text-base font-light leading-relaxed opacity-90 max-w-md">Sourcing the world's rarest beans from single-origin estates in the highlands of Ethiopia, Colombia, and Java.</p>
+                </div>
+            </div>
+        </div>
+        <div class="split-image">
+            <img src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?w=1200&q=80" alt="Roasting">
+            <div class="overlay" style="background: rgba(0,0,0,0.4);"></div>
+            <div class="content">
+                <div class="px-16 slide-in-right">
+                    <p class="text-sm tracking-[0.3em] text-luxury mb-4">CHAPTER II</p>
+                    <h3 class="text-5xl mb-6 font-light">The Roast</h3>
+                    <p class="text-base font-light leading-relaxed opacity-90 max-w-md">Small-batch roasting with precision temperature control, unlocking complex flavor profiles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Screen Image 2 -->
+    <section class="relative parallax-section" style="background-image: url('https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=2400&q=80');">
+        <div class="overlay" style="background: linear-gradient(135deg, rgba(0,0,0,0.8), rgba(20,15,10,0.7));"></div>
+        <div class="content">
+            <div class="max-w-6xl mx-auto px-8">
+                <div class="grid md:grid-cols-2 gap-20 items-center">
+                    <div class="fade-in">
+                        <p class="text-sm tracking-[0.3em] text-luxury mb-6">OUR PHILOSOPHY</p>
+                        <h2 class="text-6xl md:text-7xl mb-8 font-light leading-tight">Time is the<br/>Ultimate Luxury</h2>
+                        <p class="text-lg font-light leading-relaxed opacity-90 mb-8">Every bean is given the time it deserves. No rushing, no compromises. This is coffee elevated to an art form, where patience meets passion in every cup.</p>
+                        <button class="luxury-button">OUR STORY</button>
+                    </div>
+                    <div class="fade-in float">
+                        <div class="golden-line pl-12">
+                            <p class="text-2xl font-light mb-4">"The finest coffee is not just tasted,<br/>it is experienced."</p>
+                            <p class="text-sm tracking-wider text-luxury">— Master Roaster, Alessandro Moretti</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section -->
+    <section id="collection" class="relative bg-black py-32">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-20 fade-in">
+                <p class="text-sm tracking-[0.3em] text-luxury mb-4">THE COLLECTION</p>
+                <h2 class="text-6xl md:text-7xl font-light mb-6">Signature Roasts</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="luxury-card p-8 fade-in">
+                    <div class="image-reveal mb-8 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=800&q=80" alt="Noir Absolu" class="w-full h-80 object-cover">
+                    </div>
+                    <h3 class="text-3xl font-light mb-3">Noir Absolu</h3>
+                    <p class="text-luxury text-sm tracking-widest mb-4">DARK ROAST</p>
+                    <p class="font-light leading-relaxed opacity-80 mb-6">Intense, velvety body with notes of dark chocolate, toasted walnut, and a whisper of blackcurrant.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-3xl font-light text-luxury">$42</span>
+                        <button class="luxury-button text-xs py-2 px-6">SELECT</button>
+                    </div>
+                </div>
+                
+                <div class="luxury-card p-8 fade-in">
+                    <div class="image-reveal mb-8 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&q=80" alt="Lumière" class="w-full h-80 object-cover">
+                    </div>
+                    <h3 class="text-3xl font-light mb-3">Lumière</h3>
+                    <p class="text-luxury text-sm tracking-widest mb-4">LIGHT ROAST</p>
+                    <p class="font-light leading-relaxed opacity-80 mb-6">Delicate and bright with jasmine florals, bergamot citrus, and honey sweetness.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-3xl font-light text-luxury">$38</span>
+                        <button class="luxury-button text-xs py-2 px-6">SELECT</button>
+                    </div>
+                </div>
+                
+                <div class="luxury-card p-8 fade-in">
+                    <div class="image-reveal mb-8 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80" alt="Équilibre" class="w-full h-80 object-cover">
+                    </div>
+                    <h3 class="text-3xl font-light mb-3">Équilibre</h3>
+                    <p class="text-luxury text-sm tracking-widest mb-4">MEDIUM ROAST</p>
+                    <p class="font-light leading-relaxed opacity-80 mb-6">Harmonious balance of caramelized sugar, hazelnut, and dried apricot with silky texture.</p>
+                    <div class="flex justify-between items-center">
+                        <span class="text-3xl font-light text-luxury">$40</span>
+                        <button class="luxury-button text-xs py-2 px-6">SELECT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Screen Image 3 -->
+    <section class="relative">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=2400&q=80" alt="Perfect Cup" class="fullscreen-image">
+        <div class="overlay" style="background: rgba(0,0,0,0.5);"></div>
+        <div class="content">
+            <div class="text-center px-8 fade-in">
+                <h2 class="text-7xl md:text-9xl font-light mb-8">The Ritual</h2>
+                <p class="text-xl font-light tracking-wider opacity-90">Where every moment becomes sacred</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Showcase -->
+    <section class="split-screen">
+        <div class="split-image">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=1200&q=80" alt="Master Roaster">
+            <div class="overlay" style="background: linear-gradient(90deg, transparent, rgba(0,0,0,0.7));"></div>
+        </div>
+        <div class="bg-black content">
+            <div class="px-16 max-w-xl fade-in">
+                <p class="text-sm tracking-[0.3em] text-luxury mb-6">CRAFTSMANSHIP</p>
+                <h2 class="text-5xl md:text-6xl mb-8 font-light leading-tight">Masters of<br/>the Flame</h2>
+                <p class="text-base font-light leading-relaxed opacity-90 mb-8">Our roasting masters undergo years of training, developing an intuitive understanding of heat, time, and bean behavior. This is craftsmanship that cannot be automated or replicated.</p>
+                <div class="space-y-6">
+                    <div class="golden-line">
+                        <p class="font-light"><span class="text-luxury">15+ years</span> average experience</p>
+                    </div>
+                    <div class="golden-line">
+                        <p class="font-light"><span class="text-luxury">Small batches</span> of 25kg maximum</p>
+                    </div>
+                    <div class="golden-line">
+                        <p class="font-light"><span class="text-luxury">72 hours</span> from roast to delivery</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Screen Image 4 -->
+    <section class="relative parallax-section" style="background-image: url('https://images.unsplash.com/photo-1519082274554-1ca37fb8abb7?w=2400&q=80');">
+        <div class="overlay" style="background: rgba(0,0,0,0.6);"></div>
+        <div class="content">
+            <div class="text-center px-8 fade-in">
+                <p class="text-sm tracking-[0.3em] text-luxury mb-6">PRECISION EQUIPMENT</p>
+                <h2 class="text-6xl md:text-8xl font-light mb-8">Tools of<br/>Excellence</h2>
+                <p class="text-xl font-light max-w-3xl mx-auto opacity-90">Vintage German roasters paired with modern temperature control technology</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="bg-black py-32">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-center mb-20 fade-in">
+                <p class="text-sm tracking-[0.3em] text-luxury mb-4">BEHIND THE SCENES</p>
+                <h2 class="text-6xl md:text-7xl font-light">The Roastery</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="image-reveal overflow-hidden fade-in">
+                    <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=1200&q=80" alt="Atmosphere" class="w-full h-96 object-cover hover:scale-110 transition duration-1000">
+                </div>
+                <div class="image-reveal overflow-hidden fade-in">
+                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?w=1200&q=80" alt="Equipment Detail" class="w-full h-96 object-cover hover:scale-110 transition duration-1000">
+                </div>
+                <div class="image-reveal overflow-hidden md:col-span-2 fade-in">
+                    <img src="https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?w=2400&q=80" alt="Roastery Wide" class="w-full h-96 object-cover hover:scale-110 transition duration-1000">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Full Screen CTA -->
+    <section class="relative parallax-section" style="background-image: url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=2400&q=80');">
+        <div class="overlay overlay-gradient"></div>
+        <div class="content">
+            <div class="text-center px-8 fade-in">
+                <h2 class="text-6xl md:text-8xl font-light mb-8">Begin Your<br/>Journey</h2>
+                <div class="divider"></div>
+                <p class="text-xl font-light tracking-wider text-luxury mb-12">EXCLUSIVE MEMBERSHIP</p>
+                <div class="max-w-2xl mx-auto flex gap-6 mb-8">
+                    <input type="email" placeholder="Your email address" class="flex-1 px-8 py-4 bg-white/5 backdrop-blur-xl border border-luxury/30 focus:border-luxury/70 focus:outline-none font-light tracking-wider">
+                    <button class="luxury-button">JOIN</button>
+                </div>
+                <p class="text-sm font-light opacity-70">Limited to 500 members worldwide</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-20 px-8 border-t border-luxury/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-16 mb-16">
+                <div>
+                    <h3 class="text-3xl font-light tracking-[0.3em] text-luxury mb-6">KREO ROASTERY</h3>
+                    <p class="font-light text-sm opacity-70 leading-relaxed">Crafting extraordinary coffee since 1987</p>
+                </div>
+                <div>
+                    <h4 class="text-sm tracking-[0.2em] mb-6 text-luxury">EXPLORE</h4>
+                    <ul class="space-y-3 font-light text-sm">
+                        <li><a href="#" class="hover:text-luxury transition">Collection</a></li>
+                        <li><a href="#" class="hover:text-luxury transition">Membership</a></li>
+                        <li><a href="#" class="hover:text-luxury transition">Equipment</a></li>
+                        <li><a href="#" class="hover:text-luxury transition">Locations</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm tracking-[0.2em] mb-6 text-luxury">COMPANY</h4>
+                    <ul class="space-y-3 font-light text-sm">
+                        <li><a href="#" class="hover:text-luxury transition">Our Story</a></li>
+                        <li><a href="#" class="hover:text-luxury transition">Sustainability</a></li>
+                        <li><a href="#" class="hover:text-luxury transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-luxury transition">Press</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm tracking-[0.2em] mb-6 text-luxury">CONNECT</h4>
+                    <ul class="space-y-3 font-light text-sm">
+                        <li><a href="#" class="hover:text-luxury transition">Instagram</a></li>
+                        <li><a href="#" class="hover:text-luxury transition">Facebook</a></li>
+                        <li><a href="#" class="hover:text-luxury transition">LinkedIn</a></li>
+                        <li><a href="#" class="hover:text-luxury transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-8 border-t border-luxury/20 text-center">
+                <p class="text-xs font-light tracking-wider opacity-50">© 2024 KREO ROASTERY. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu
+            const menuToggle = document.getElementById('menuToggle');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileLinks = document.querySelectorAll('.mobile-menu-link');
+
+            if (menuToggle && mobileMenu && closeMenu) {
+                menuToggle.addEventListener('click', () => {
+                    mobileMenu.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                });
+
+                closeMenu.addEventListener('click', () => {
+                    mobileMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.remove('active');
+                        document.body.style.overflow = '';
+                    });
+                });
+            }
+
+            function checkScroll() {
+                const elements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .image-reveal');
+                elements.forEach(el => {
+                    const elementTop = el.getBoundingClientRect().top;
+                    const viewportBottom = window.innerHeight;
+                    
+                    if (elementTop < viewportBottom - 150) {
+                        el.classList.add('active');
+                    }
+                });
+            }
+            
+            setTimeout(() => {
+                const firstFadeIn = document.querySelector('.fade-in');
+                if (firstFadeIn) firstFadeIn.classList.add('active');
+                checkScroll();
+            }, 300);
+            
+            window.addEventListener('scroll', function() {
+                checkScroll();
+                
+                const nav = document.querySelector('nav');
+                if (nav) {
+                    if (window.scrollY > 100) {
+                        nav.classList.add('scrolled');
+                    } else {
+                        nav.classList.remove('scrolled');
+                    }
+                }
+            });
+            
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const href = this.getAttribute('href');
+                    const target = href ? document.querySelector(href) : null;
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
+            
+            window.addEventListener('scroll', function() {
+                const scrolled = window.scrollY;
+                document.querySelectorAll('.parallax-section').forEach(section => {
+                    const speed = 0.5;
+                    section.style.backgroundPosition = `center ${scrolled * speed}px`;
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+<style is:global>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Montserrat', sans-serif;
+        background: #000;
+        color: #f5f5f5;
+        overflow-x: hidden;
+    }
+    
+    h1, h2, h3 {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 300;
+        letter-spacing: 0.05em;
+    }
+    
+    section {
+        min-height: 100vh;
+        position: relative;
+    }
+    
+    .fullscreen-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+    }
+    
+    .overlay-gradient {
+        background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.8) 100%);
+    }
+    
+    .content {
+        position: relative;
+        z-index: 2;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        padding: 2rem 4rem;
+        transition: all 0.5s ease;
+        background: transparent;
+    }
+    
+    nav.scrolled {
+        background: rgba(0, 0, 0, 0.95);
+        padding: 1.5rem 4rem;
+        backdrop-filter: blur(20px);
+    }
+
+    .mobile-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.98);
+        backdrop-filter: blur(20px);
+        z-index: 200;
+        transition: right 0.5s ease;
+    }
+
+    .mobile-menu.active {
+        right: 0;
+    }
+
+    .mobile-menu-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        position: relative;
+    }
+
+    .close-menu {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 3rem;
+        line-height: 1;
+    }
+
+    .mobile-menu-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .mobile-menu-link {
+        font-size: 1.5rem;
+        font-weight: 300;
+        letter-spacing: 0.2em;
+        color: #f5f5f5;
+        transition: color 0.3s ease;
+    }
+
+    .mobile-menu-link:hover {
+        color: #c9a961;
+    }
+    
+    .fade-in {
+        opacity: 0;
+        transform: translateY(60px);
+        transition: all 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    
+    .fade-in.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .slide-in-left {
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    
+    .slide-in-left.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .slide-in-right {
+        opacity: 0;
+        transform: translateX(100px);
+        transition: all 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+    
+    .slide-in-right.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    
+    .split-screen {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+    }
+    
+    .split-image {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .split-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 1s ease;
+    }
+    
+    .split-image:hover img {
+        transform: scale(1.05);
+    }
+    
+    .luxury-button {
+        position: relative;
+        padding: 1rem 3rem;
+        background: transparent;
+        border: 1px solid #c9a961;
+        color: #c9a961;
+        font-weight: 300;
+        letter-spacing: 0.2em;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+    
+    .luxury-button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: #c9a961;
+        transition: left 0.5s ease;
+        z-index: -1;
+    }
+    
+    .luxury-button:hover {
+        color: #000;
+    }
+    
+    .luxury-button:hover::before {
+        left: 0;
+    }
+    
+    .text-luxury {
+        color: #c9a961;
+    }
+    
+    .divider {
+        width: 100px;
+        height: 1px;
+        background: linear-gradient(90deg, transparent, #c9a961, transparent);
+        margin: 2rem auto;
+    }
+    
+    .parallax-section {
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .image-reveal {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .image-reveal::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: transform 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+    }
+    
+    .image-reveal.active::after {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+    
+    .luxury-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(201, 169, 97, 0.2);
+        transition: all 0.6s ease;
+    }
+    
+    .luxury-card:hover {
+        background: rgba(201, 169, 97, 0.1);
+        transform: translateY(-20px);
+        border-color: rgba(201, 169, 97, 0.5);
+    }
+    
+    .text-shadow-luxury {
+        text-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);
+    }
+    
+    .golden-line {
+        position: relative;
+        padding-left: 3rem;
+    }
+    
+    .golden-line::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, #c9a961, transparent);
+    }
+    
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-20px); }
+    }
+    
+    .float {
+        animation: float 6s ease-in-out infinite;
+    }
+    
+    .grain::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(%23noise)" opacity="0.05"/></svg>');
+        pointer-events: none;
+        z-index: 999;
+    }
+    
+    @media (max-width: 768px) {
+        .split-screen {
+            grid-template-columns: 1fr;
+        }
+        nav {
+            padding: 1rem 1.5rem;
+        }
+        nav.scrolled {
+            padding: 0.75rem 1.5rem;
+        }
+        h1 {
+            font-size: 3rem !important;
+            line-height: 1.1;
+        }
+        h2 {
+            font-size: 2.5rem !important;
+        }
+        h3 {
+            font-size: 2rem !important;
+        }
+        .luxury-button {
+            padding: 0.75rem 2rem;
+            font-size: 0.75rem;
+        }
+        .content {
+            padding: 0 1rem;
+        }
+        .split-image .px-16 {
+            padding-left: 2rem !important;
+            padding-right: 2rem !important;
+        }
+        .golden-line {
+            padding-left: 2rem;
+        }
+        .mobile-menu-link {
+            font-size: 1.25rem;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        nav {
+            padding: 0.75rem 1rem;
+        }
+        nav.scrolled {
+            padding: 0.5rem 1rem;
+        }
+        nav .text-2xl {
+            font-size: 1.25rem;
+        }
+        h1 {
+            font-size: 2.5rem !important;
+        }
+        h2 {
+            font-size: 2rem !important;
+        }
+        h3 {
+            font-size: 1.75rem !important;
+        }
+        .luxury-button {
+            padding: 0.5rem 1.5rem;
+            font-size: 0.65rem;
+        }
+        .luxury-card {
+            padding: 1.5rem !important;
+        }
+        .split-image .px-16 {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+        input[type="email"] {
+            padding: 0.75rem 1rem !important;
+            font-size: 0.875rem;
+        }
+        .max-w-2xl.flex {
+            flex-direction: column;
+        }
+        .max-w-2xl.flex input {
+            width: 100%;
+        }
+    }
+</style>
