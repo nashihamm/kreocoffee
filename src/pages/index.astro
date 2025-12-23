@@ -130,7 +130,7 @@ const title = "Kreo Roastery - Luxury Coffee Roastery";
             </div>
             
             <div class="grid md:grid-cols-3 gap-12">
-                <div class="luxury-card p-8 fade-in">
+                <a href="/product/noir-absolu" class="luxury-card p-8 fade-in">
                     <div class="image-reveal mb-8 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1610889556528-9a770e32642f?w=800&q=80" alt="Noir Absolu" class="w-full h-80 object-cover">
                     </div>
@@ -139,11 +139,11 @@ const title = "Kreo Roastery - Luxury Coffee Roastery";
                     <p class="font-light leading-relaxed opacity-80 mb-6">Intense, velvety body with notes of dark chocolate, toasted walnut, and a whisper of blackcurrant.</p>
                     <div class="flex justify-between items-center">
                         <span class="text-3xl font-light text-luxury">$42</span>
-                        <button class="luxury-button text-xs py-2 px-6">SELECT</button>
+                        <span class="luxury-button text-xs py-2 px-6">VIEW</span>
                     </div>
-                </div>
+                </a>
                 
-                <div class="luxury-card p-8 fade-in">
+                <a href="/product/lumiere" class="luxury-card p-8 fade-in">
                     <div class="image-reveal mb-8 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=800&q=80" alt="Lumière" class="w-full h-80 object-cover">
                     </div>
@@ -152,11 +152,11 @@ const title = "Kreo Roastery - Luxury Coffee Roastery";
                     <p class="font-light leading-relaxed opacity-80 mb-6">Delicate and bright with jasmine florals, bergamot citrus, and honey sweetness.</p>
                     <div class="flex justify-between items-center">
                         <span class="text-3xl font-light text-luxury">$38</span>
-                        <button class="luxury-button text-xs py-2 px-6">SELECT</button>
+                        <span class="luxury-button text-xs py-2 px-6">VIEW</span>
                     </div>
-                </div>
+                </a>
                 
-                <div class="luxury-card p-8 fade-in">
+                <a href="/product/equilibre" class="luxury-card p-8 fade-in">
                     <div class="image-reveal mb-8 overflow-hidden">
                         <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80" alt="Équilibre" class="w-full h-80 object-cover">
                     </div>
@@ -165,9 +165,9 @@ const title = "Kreo Roastery - Luxury Coffee Roastery";
                     <p class="font-light leading-relaxed opacity-80 mb-6">Harmonious balance of caramelized sugar, hazelnut, and dried apricot with silky texture.</p>
                     <div class="flex justify-between items-center">
                         <span class="text-3xl font-light text-luxury">$40</span>
-                        <button class="luxury-button text-xs py-2 px-6">SELECT</button>
+                        <span class="luxury-button text-xs py-2 px-6">VIEW</span>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -645,6 +645,9 @@ const title = "Kreo Roastery - Luxury Coffee Roastery";
         backdrop-filter: blur(20px);
         border: 1px solid rgba(201, 169, 97, 0.2);
         transition: all 0.6s ease;
+        text-decoration: none;
+        color: inherit;
+        display: block;
     }
     
     .luxury-card:hover {
